@@ -120,7 +120,7 @@ export default function ButtonAppBar() {
 
       <div classNameName="container">
         <form>
-          <div className="mb-3 row mt-5">
+          <div className="mb-3 mt-5">
             <input
               type="text"
               value={searchItem}
