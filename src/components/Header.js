@@ -95,23 +95,23 @@ export default function ButtonAppBar() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a
+                <div
                   className="nav-link hovered"
                   aria-current="page"
                   onClick={handleTech}
                 >
                   Tech
-                </a>
+                </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link hovered" onClick={handlePolitics}>
+                <div className="nav-link hovered " onClick={handlePolitics}>
                   Politics
-                </a>
+                </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link hovered" onClick={handleSports}>
+                <div className="nav-link hovered" onClick={handleSports}>
                   Sports
-                </a>
+                </div>
               </li>
             </ul>
           </div>
