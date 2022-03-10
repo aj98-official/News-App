@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
 
   const handleSports = (e) => {
     e.preventDefault();
-    const url ="https://newsapi.org/v2/everything?q=" + "sports" +"&from=2022-03-09&sortBy=popularity&apiKey=" +apiKey;
+    const url ="https://newsapi.org/v2/everything?q=sports&from=2022-03-09&sortBy=popularity&apiKey=" +apiKey;
 
     const fetchdata = async () => {
       try {
@@ -43,7 +43,7 @@ export default function ButtonAppBar() {
   
   const handleTech = (e) => {
     e.preventDefault();
-    const url ="https://newsapi.org/v2/everything?q=" + "tech" +"&from=2022-03-09&sortBy=popularity&apiKey=" +apiKey;
+    const url ="https://newsapi.org/v2/everything?q=tech&from=2022-03-09&sortBy=popularity&apiKey=" +apiKey;
 
     const fetchdata = async () => {
       try {
@@ -60,7 +60,7 @@ export default function ButtonAppBar() {
 
   const handlePolitics = (e) => {
     e.preventDefault();
-    const url ="https://newsapi.org/v2/everything?q=" + "politics" +"&from=2022-03-09&sortBy=popularity&apiKey=" +apiKey;
+    const url ="https://newsapi.org/v2/everything?q=politics&from=2022-03-09&sortBy=popularity&apiKey=" +apiKey;
 
     const fetchdata = async () => {
       try {
@@ -76,13 +76,13 @@ export default function ButtonAppBar() {
   };
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             NewsApp
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -90,26 +90,26 @@ export default function ButtonAppBar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
                 <a
-                  class="nav-link hovered"
+                  className="nav-link hovered"
                   aria-current="page"
                   onClick={handleTech}
                 >
                   Tech
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hovered" onClick={handlePolitics}>
+              <li className="nav-item">
+                <a className="nav-link hovered" onClick={handlePolitics}>
                   Politics
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hovered" onClick={handleSports}>
+              <li className="nav-item">
+                <a className="nav-link hovered" onClick={handleSports}>
                   Sports
                 </a>
               </li>
@@ -118,19 +118,19 @@ export default function ButtonAppBar() {
         </div>
       </nav>
 
-      <div className="container">
+      <div classNameName="container">
         <form>
-          <div class="mb-3 row mt-5">
+          <div className="mb-3 row mt-5">
             <input
               type="text"
               value={searchItem}
               onChange={(e) => setSearchItem(e.target.value)}
-              class="form-control col mx-3"
+              className="form-control col mx-3"
               placeholder="Type here"
             />
             <button
               type="submit"
-              class="btn btn-primary col-2 mx-3"
+              className="btn btn-primary col-2 mx-3"
               onClick={handleInput}
             >
               Search
